@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Copper Cup Café — Gallery</title>
+  <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Copper Cup Café</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About & Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="custom.html">Custom Orders</a></li>
+        </ul>
+        <button class="btn btn-warning position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer" id="cartButton">
+          Cart <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container">
+      <h1 class="mb-4">Gallery</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+        <div class="col"><img src="iced coffee with straw.jpeg" class="img-fluid rounded shadow-sm" alt="Iced coffee with straw"></div>
+        <div class="col"><img src="outdoor seating.jpeg" class="img-fluid rounded shadow-sm" alt="Outdoor seating"></div>
+        <div class="col"><img src="Frieds enjoying coffee.jpeg" class="img-fluid rounded shadow-sm" alt="Friends enjoying coffee"></div>
+        <div class="col"><img src="Pour over setup.jpeg" class="img-fluid rounded shadow-sm" alt="Pour over setup"></div>
+        <div class="col"><img src="barista tamping espresso.jpeg" class="img-fluid rounded shadow-sm" alt="barista tamping espresso"></div>
+        <div class="col"><img src="sunlit cafe interior.jpeg" class="img-fluid rounded shadow-sm" alt="sunlit cafe interior"></div>
+        <div class="col"><img src="roasted beans in hopper.jpeg" class="img-fluid rounded shadow-sm" alt="roasted beans in hopper"></div>
+        <div class="col"><img src="freshly baked pastries.jpeg" class="img-fluid rounded shadow-sm" alt="freshly baked pastries"></div>
+        <div class="col"><img src="latte art close up.jpeg" class="img-fluid rounded shadow-sm" alt="latte art close up"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Offcanvas Cart -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartDrawer" aria-labelledby="cartLabel">
+    <div class="offcanvas-header">
+      <h5 id="cartLabel">Your Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <div id="cartItems" class="mb-3"></div>
+      <div class="mt-auto">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <strong>Total:</strong>
+          <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="btn btn-success w-100" id="checkoutBtn">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container text-center small">
+      <p class="mb-2">© <span id="year"></span> Copper Cup Café • 101 Main St • Open daily 7am–7pm</p>
+      <a href="tel:+15551234567" class="link-light">Call us</a> ·
+      <a href="about.html#contact" class="link-light">Contact</a> ·
+      <a href="about.html#accessibility" class="link-light">Accessibility</a>
+    </div>
+  </footer>
+
+  <script src="bootstrap.bundle.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

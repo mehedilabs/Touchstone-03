@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Copper Cup Café — Menu</title>
+  <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+  <!-- Navbar (same across pages) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Copper Cup Café</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="menu.html" aria-current="page">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About & Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="custom.html">Custom Orders</a></li>
+        </ul>
+        <button class="btn btn-warning position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer" id="cartButton">
+          Cart <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container">
+      <h1 class="mb-4">Menu</h1>
+
+      <h2 class="h4 mt-4">Coffee & Tea</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+        <!-- Americano -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="Americano.jpeg" class="card-img-top" alt="Americano">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Americano</h5>
+              <p class="card-text small flex-grow-1">Smooth espresso topped with hot water.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$3.00</span>
+                <button class="btn btn-primary add-to-cart" data-name="Americano" data-price="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Cappuccino -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="Cappuccino.jpeg" class="card-img-top" alt="Cappuccino">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Cappuccino</h5>
+              <p class="card-text small flex-grow-1">Velvety foam with a bold espresso base.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$4.00</span>
+                <button class="btn btn-primary add-to-cart" data-name="Cappuccino" data-price="4">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Earl Grey -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="Earl Grey.jpeg" class="card-img-top" alt="earl Grey">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Earl Grey</h5>
+              <p class="card-text small flex-grow-1">Fragrant black tea with bergamot.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$3.25</span>
+                <button class="btn btn-primary add-to-cart" data-name="Earl Grey" data-price="3.25">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mocha Frappe -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="Mocha Frappe.jpeg" class="card-img-top" alt="Mocha Frappe">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Mocha Frappe</h5>
+              <p class="card-text small flex-grow-1">Icy cocoa blend with espresso kick.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$4.75</span>
+                <button class="btn btn-primary add-to-cart" data-name="Mocha Frappe" data-price="4.75">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Blueberry Muffins -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="Blueberry Muffins.jpeg" class="card-img-top" alt="Blueberry muffins">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Blueberry Muffins</h5>
+              <p class="card-text small flex-grow-1">Baked fresh with bursting berries.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$2.50</span>
+                <button class="btn btn-primary add-to-cart" data-name="Blueberry Muffins" data-price="2.5">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Toasted Bagel -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="Toasted Bagel.jpeg" class="card-img-top" alt="Toasted bagel">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Toasted Bagel</h5>
+              <p class="card-text small flex-grow-1">Served with butter or cream cheese.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$2.25</span>
+                <button class="btn btn-primary add-to-cart" data-name="Toasted Bagel" data-price="2.25">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5">
+
+      <div class="alert alert-info" role="alert">
+        Tip: Click <span class="fw-semibold">Cart</span> in the top-right to view and edit your items.
+      </div>
+    </div>
+  </main>
+
+  <!-- Cart Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartDrawer" aria-labelledby="cartLabel">
+    <div class="offcanvas-header">
+      <h5 id="cartLabel">Your Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <div id="cartItems" class="mb-3"></div>
+      <div class="mt-auto">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <strong>Total:</strong>
+          <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="btn btn-success w-100" id="checkoutBtn">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container text-center small">
+      <p class="mb-2">© <span id="year"></span> Copper Cup Café • 101 Main St • Open daily 7am–7pm</p>
+      <a href="tel:+15551234567" class="link-light">Call us</a> ·
+      <a href="about.html#contact" class="link-light">Contact</a> ·
+      <a href="about.html#accessibility" class="link-light">Accessibility</a>
+    </div>
+  </footer>
+
+  <script src="bootstrap.bundle.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
